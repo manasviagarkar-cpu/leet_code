@@ -1,9 +1,8 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
-        p = len(word1)
-        q = len(word2)
-        i=0
-        j=0
+        p ,q  = len(word1) , len(word2)
+        i , j = 0 , 0
+       
         merged = []
 
         while(i < p or j < q):
