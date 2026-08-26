@@ -5,8 +5,6 @@ class Solution:
         for i in range(0,len(q)):
             if num % q[i] == 0 :
                  count += 1
-            else :
-                count 
         return count
     
 
