@@ -8,7 +8,6 @@ class Solution:
         s = s.replace("XC","LXXXX")
         s = s.replace("CD","CCCC")
         s = s.replace("CM","DCCCC")
-       
         for i in s:
             so = roman[i]
             t = t + so
