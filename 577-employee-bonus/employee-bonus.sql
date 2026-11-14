@@ -1,9 +1,5 @@
 # Write your MySQL query statement below
-SELECT
-    Employee.name, Bonus.bonus
-FROM
-    Employee
-        LEFT OUTER JOIN
-    Bonus ON Employee.empId = Bonus.empId
-WHERE
-    bonus < 1000 OR bonus IS NULL;;
+SELECT e.name, b.bonus
+FROM Employee e
+LEFT JOIN Bonus b ON e.empId = b.empId
+WHERE b.bonus < 1000 OR b.bonus IS NULL;
